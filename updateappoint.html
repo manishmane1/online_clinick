@@ -1,0 +1,130 @@
+<center>
+<style>
+body{
+	background-image:linear-gradient(rgba(4,0,98,0.8),#098709),url("lllll.jpeg");
+	background-size:cover;
+	color:#fff;
+	}
+	table{
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	position:absolute;
+	border: 3px solid #02eee2; 
+    padding: 35px;
+    border-start-start-radius: 100px;
+    border-bottom-right-radius: 90px;
+      box-shadow: 2px 0.3px 14px 8px rgba(149, 208, 210, 0.656);
+	}
+	#rcorners2{
+
+	   width: 85%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    font-color:#fff;
+    background:transparent;
+    border-radius: 14PX;
+    margin:5px;
+    font-size: 16px;
+}
+	
+	.button{
+	 padding: 10px;
+	font-size:16px
+    color: #fff;
+    outline-style: none;
+    <!--background: transparent;
+    border: 1px solid #fff;
+    width: 70px;
+    cursor: pointer;
+   
+	}
+	.button4{
+	border-radius:15px; 
+	margin:2px;
+	padding:16px
+	color:rgb(47, 246, 233);
+	background-color:#4ACF50;
+	}
+	.button4:hover{
+	background-color:orange;
+	}
+	#rcorners2:hover{
+	background-color:#b77915;
+	<!--color:#fff;
+	}
+	table:hover{
+	background-image:linear-gradient(rgba(0,0,0,0.5),#098709);
+	<!--background-image:linear-gradient(rgba(4,0,98,0.8),#098709);
+	}
+	
+	</style>
+<!--<table><tr height=100></tr></table>  -->
+<body>
+<form name=f method="post" action=appoint.jsp>
+<table border=0>
+	<tr>
+		<th><p align=left>ID</th>
+		<th><input type=text name=t1 id="rcorners2"></th>
+	</tr>
+	<tr>
+		<th><p align=left>Name</th>
+		<th><input type=text name=t2 onkeypress="return allowOnlyLetters(event,this);" id="rcorners2"></th>
+	</tr>
+	<tr>
+		<th><p align=left>Type</th>
+		<th><input type=text name=t3 id="rcorners2"></th>
+	</tr>
+	<tr>
+		<th><p align=left>Descripation</th>
+		<th><input type=text name=t4 onkeypress="return allowOnlyLetters(event,this);" id="rcorners2"></th>
+	</tr>
+	<tr>
+		<th><p align=left>date</th>
+		<th><input type=text name=t5 id="rcorners2"></th>
+	</tr>
+	<tr>
+		<th><p align=left>Doctor Id</th>
+		<th><input type=text name=t6 id="rcorners2"></th>
+	</tr>
+	<tr>
+		<th colspan=2>
+			<input type=button value="New" class="button button4">
+			<input type=submit value="Update" name=b1 class="button button4">
+			<input type=submit value="Allsearch" name=b1 class="button button4">
+			<input type=submit value="Psearch" name=b1 class="button button4">
+			<input type=button value="Menu" onclick=a() class="button button4">
+		</th>
+	</tr>
+</table>
+</form>
+</body>
+</center>
+<script>
+	function a()
+	{
+		window.open("menu.html","_self")
+	}
+	function allowOnlyLetters(e, t)   
+	{    
+	   if (window.event)    
+	   {    
+		  var charCode = window.event.keyCode;    
+	   }    
+	   else if (e)   
+	   {    
+		  var charCode = e.which;    
+	   }    
+	   else { return true; }    
+	   if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))    
+		   return true;    
+	   else  
+	   {    
+		  alert("Please enter only alphabets");    
+		  return false;    
+	   }           
+	}      
+	
+</script>

@@ -1,0 +1,172 @@
+<center>
+<style>
+body{
+	background-image:linear-gradient(rgba(45,0,87,0.2),#098709),url("lllll.jpeg");
+	background-size:cover;
+	color:#fff;
+	}
+	table{
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	position:absolute;
+	border: 3px solid #02eee2; 
+    padding: 25px;
+    margin:10px;
+    border-bottom-left-radius: 120px;
+   border-start-end-radius: 120px;
+   <!-- border-bottom-right-radius: 90px;   
+     box-shadow: 2px 0.3px 14px 8px rgba(149, 208, 210, 0.656);
+	}
+	#rcorners2{
+
+	   width: 50%;
+    padding: 16px;
+    outline: 0;
+    color: black;
+    background:transparent;
+    border-radius: 8PX;
+    margin:0px;
+    font-size: 30px;
+}
+	
+	.button{
+	 padding: 10px;
+	font-size:15px; 
+	font:bold;  
+	 color: #fff;
+    outline-style: none;
+    <!--background: transparent;
+    border: 1px solid #fff;
+    width: 70px;
+    cursor: pointer;
+   
+	}
+	.button4{
+	border-radius:15px; 
+	margin:2px;
+	padding:16px;
+	color:black;
+	background-color:#20c8ce;
+	}
+	.button4:hover{
+	background-color:orange;
+	}
+	table:hover{
+	background-image:linear-gradient(rgba(0,0,0,0.5),#098709);
+	<!--background-image:linear-gradient(rgba(4,0,98,0.8),#098709);
+	}
+</style>
+<!-- -<table><tr height=100></tr></table>---->
+<body>
+<table border=0>
+	<tr>
+		<th id="rcorners2">Appointment Details</th>
+		<th><input type=button value="Save" onclick="asave()" class="button button4"></th>
+		<th><input type=button value="Update" onclick="aupdate()" class="button button4"></th>
+		<th><input type=button value="Delete" onclick="adelete()" class="button button4" ></th>
+	</tr>
+	<tr>
+		<th id="rcorners2">Doctor Details</th>
+		<th><input type=button value="Save" onclick="bsave()" class="button button4"></th>
+		<th><input type=button value="Update" onclick="bupdate()" class="button button4"></th>
+		<th><input type=button value="Delete" onclick="bdelete()" class="button button4"></th>
+	</tr>
+	<tr>
+		<th id="rcorners2">Patient Details</th>
+		<th><input type=button value="Save" onclick="csave()" class="button button4"></th>
+		<th><input type=button value="Update" onclick="cupdate()" class="button button4"></th>
+		<th><input type=button value="Delete" onclick="cdelete()" class="button button4"></th>
+	</tr>
+	<tr>
+		<th id="rcorners2">Test Details</th>
+		<th><input type=button value="Save" onclick="dsave()" class="button button4"></th>
+		<th><input type=button value="Update" onclick="dupdate()" class="button button4"></th>
+		<th><input type=button value="Delete" onclick="ddelete()" class="button button4"></th>
+	</tr>
+	<tr>
+		<th id="rcorners2">Clinic Details</th>
+		<th><input type=button value="Save" onclick="esave()" class="button button4"></th>
+		<th><input type=button value="Update" onclick="eupdate()" class="button button4"></th>
+		<th><input type=button value="Delete" onclick="edelete()" class="button button4"></th>
+	</tr>
+</table>
+</body>
+
+<script>
+	function asave()
+	{
+		window.open("appoint.html","_self")
+	}
+	function aupdate()
+	{
+		window.open("updateappoint.html","_self")
+	}
+	function adelete()
+	{
+		window.open("deleteappoint2.html","_self")
+	}
+
+</script>
+<script>
+	function bsave()
+	{
+		window.open("doctor.html","_self")
+	}
+	function bupdate()
+	{
+		window.open("updatedoctor.html","_self")
+	}
+	function bdelete()
+	{
+		window.open("deletedoctor2.html","_self")
+	}
+
+</script>
+<script>
+	function csave()
+	{
+		window.open("patient.html","_self")
+	}
+	function cupdate()
+	{
+		window.open("updatepatient.html","_self")
+	}
+	function cdelete()
+	{
+		window.open("deletepatient2.html","_self")
+	}
+
+</script>
+<script>
+	function dsave()
+	{
+		window.open("test.html","_self")
+	}
+	function dupdate()
+	{
+		window.open("updatetest.html","_self")
+	}
+	function ddelete()
+	{
+		window.open("deletetest2.html","_self")
+	}
+
+</script>
+<script>
+	function esave()
+	{
+		window.open("clinic.html","_self")
+	}
+	function eupdate()
+	{
+		window.open("updateclinic.html","_self")
+	}
+	function edelete()
+	{
+		window.open("deleteclinic2.html","_self")
+	}
+
+</script>
+</body>
+</html>

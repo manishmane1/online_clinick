@@ -1,0 +1,143 @@
+<center>
+<style>
+body{
+background-image:linear-gradient(rgba(0,0,0,0.3),#095609),url("nat.jpg");
+background-size:cover;
+	color:#fff;
+	}
+	table{
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	position:absolute;
+	border: 3px solid #02eee2; 
+    padding: 35px;
+    border-start-start-radius: 100px;
+    border-bottom-right-radius: 90px;
+      box-shadow: 2px 0.3px 14px 8px rgba(149, 208, 210, 0.656);
+	}
+	#rcorners2{
+
+	   width: 80x;
+    padding: 12px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background:transparent;
+    border-radius: 16PX;
+    margin:2px;
+    font-size: 16px;
+}
+	
+	.button{
+	 padding: 12px;
+	font-size:16px
+    color:blue;
+    outline-style: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 80px;
+    cursor: pointer;
+   
+	}
+	.button4{
+	border-radius:20px; 
+	margin:5px;
+	padding:16px
+	  border: 1px solid #fff;
+	color:#fff;
+	background-color:#78765;
+	}
+.button4:hover{
+            background-color: blue;
+            transition: all;
+        }
+       table:hover{
+	background-image:linear-gradient(rgba(0,0,0,0.5),#098709);
+	<!--background-image:linear-gradient(rgba(0,0,0,0.5),#098709);
+	}
+</style>
+<body>
+<form name=f method=post action=doctor.jsp>
+<table border=0>
+	<tr>
+		<th><p align=left>ID</th>
+		<th><input type=text name=t1 id="rcorners2"></th>
+	</tr>
+	<tr>
+		<th><p align=left>Name</th>
+		<th><input type=text name=t2 onkeypress="return allowOnlyLetters(event,this);" id="rcorners2"></th>
+	</tr>
+	<tr>
+		<th><p align=left>Contact</th>
+		<th><input type=text name=t3 onkeypress="return allowOnlyNumbers(event,this);" id="rcorners2"></th>
+	</tr>
+	<tr>
+		<th><p align=left>Mail</th>
+		<th><input type=text name=t4 id="rcorners2"></th>
+	</tr>
+	<tr>
+		<th><p align=left>Address</th>
+		<th><input type=text name=t5 id="rcorners2"></th>
+	</tr>
+	<tr>
+		<th colspan=2>
+			<input type=button value="New" class="button button4">
+			<input type=submit value="Update" name=b1 class="button button4">
+			<input type=submit value="Allsearch" name=b1 class="button button4">
+			<input type=submit value="Psearch" name=b1 class="button button4">
+	<input type=button value="Menu" onclick=a() class="button button4">
+		</th>
+	</tr>
+</table>
+</form>
+<script>
+	function a()
+	{
+		window.open("menu.html","_self")
+	}
+	function allowOnlyLetters(e, t)   
+	{    
+	   if (window.event)    
+	   {    
+		  var charCode = window.event.keyCode;    
+	   }    
+	   else if (e)   
+	   {    
+		  var charCode = e.which;    
+	   }    
+	   else { return true; }    
+	   if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))    
+		   return true;    
+	   else  
+	   {    
+		  alert("Please enter only alphabets");    
+		  return false;    
+	   }           
+	}
+	function allowOnlyNumbers(e, t)   
+	{ 
+		
+	   if((f.t3.value).length>9)
+			   return false;
+	   if (window.event)    
+	   {    
+		  var charCode = window.event.keyCode; 
+		  //alert(charCode)
+	   } 
+	  
+	   else if (e)   
+	   {    
+		  var charCode = e.which;    
+	   }    
+	   else { return true; }    
+	   if ((charCode > 47 && charCode < 58))
+		   return true;    
+	   else  
+	   {    
+		  alert("Please enter only numbers...");  
+		  return false;    
+	   }  
+	   
+	}
+</script>
